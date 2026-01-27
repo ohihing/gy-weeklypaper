@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+  <title>금촌교회 청년부 · 온라인 주보</title>
+  <meta name="description" content="금촌교회 청년부 온라인 주보" />
+  <meta name="theme-color" content="#ffffff" />
+
+  <!-- Pretendard -->
+  <link rel="stylesheet" as="style" crossorigin
+    href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.8/dist/web/static/pretendard-dynamic-subset.css" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <!-- Topbar -->
+  <header class="topbar js-topbar">
+    <div class="topbar__inner">
+      <div class="title">금촌교회 청년부</div>
+      <button class="menuBtn" type="button" id="openMenu" aria-label="메뉴 열기">
+        <span class="menuBtn__icon"></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Sheet Menu -->
+  <aside class="sheet" id="sheet" aria-hidden="true">
+    <div class="sheet__backdrop" id="closeMenu"></div>
+
+    <div class="sheet__panel" role="dialog" aria-modal="true" aria-label="페이지 메뉴">
+      <div class="sheet__head">
+        <div class="sheet__title">MENU</div>
+        <button class="sheet__close" type="button" id="closeMenuBtn" aria-label="닫기">✕</button>
+      </div>
+
+      <nav class="sheet__nav">
+        <!-- ✅ '웰컴' 메뉴 삭제 -->
+        <a class="sheet__link" href="#order" data-route>이번 주 예배 순서</a>
+        <a class="sheet__link" href="#news" data-route>이번 주 청년부 소식</a>
+        <a class="sheet__link" href="#praise" data-route>이번 주 찬양</a>
+      </nav>
+    </div>
+  </aside>
+
+  <!-- Main -->
+  <main class="wrap">
+    <!-- HOME -->
+    <section class="view is-active" data-view="home" id="home">
+      <div class="hero">
+        <!-- ✅ 순서 변경: 온라인 주보 -> 날짜 -->
+        <h1 class="hero__title">온라인 주보</h1>
+
+        <div class="hero__badge" id="weekBadge">이번 주</div>
+
+        <p class="hero__desc" id="weekSubtitle">
+          환영합니다.<br />
+          금촌교회 청년부입니다.
+        </p>
+      </div>
+
+      <div class="grid">
+        <a class="banner scroll-item" href="#order" data-route>
+          <div class="banner__content">
+            <div class="banner__title">이번 주 예배 순서</div>
+            <div class="banner__desc">순서/인도/기도 등</div>
+          </div>
+          <div class="banner__icon">→</div>
+        </a>
+
+        <a class="banner scroll-item" href="#news" data-route>
+          <div class="banner__content">
+            <div class="banner__title">이번 주 청년부 소식</div>
+            <div class="banner__desc">공지/안내/모임</div>
+          </div>
+          <div class="banner__icon">→</div>
+        </a>
+
+        <a class="banner scroll-item" href="#praise" data-route>
+          <div class="banner__content">
+            <div class="banner__title">이번 주 찬양</div>
+            <div class="banner__desc">악보 이미지 확인</div>
+          </div>
+          <div class="banner__icon">→</div>
+        </a>
+      </div>
+    </section>
+
+    <!-- ORDER -->
+    <section class="view" data-view="order" id="order">
+      <div class="pageHead">
+        <button class="backBtn" type="button" data-back aria-label="뒤로">←</button>
+        <div class="pageTitle">이번 주 예배 순서</div>
+      </div>
+
+      <div class="pageContent anim-fadein">
+        <div class="orderList" id="orderList">
+          <!-- JS render -->
+        </div>
+      </div>
+    </section>
+
+    <!-- NEWS -->
+    <section class="view" data-view="news" id="news">
+      <div class="pageHead">
+        <button class="backBtn" type="button" data-back aria-label="뒤로">←</button>
+        <div class="pageTitle">이번 주 청년부 소식</div>
+      </div>
+
+      <div class="pageContent anim-fadein">
+        <p class="leadDesc" id="newsIntro">이번 주 공지/안내 사항입니다.</p>
+
+        <ul class="bulletList section-mt" id="newsList">
+          <!-- JS render -->
+        </ul>
+      </div>
+    </section>
+
+    <!-- PRAISE -->
+    <section class="view" data-view="praise" id="praise">
+      <div class="pageHead">
+        <button class="backBtn" type="button" data-back aria-label="뒤로">←</button>
+        <div class="pageTitle">이번 주 찬양</div>
+      </div>
+
+      <div class="pageContent anim-fadein">
+        <p class="leadDesc">
+          악보는 아래로 쭉 확인할 수 있어요.<br />
+          <span class="muted">이미지를 누르면 전체화면으로 크게 보고, 좌우로 넘길 수 있습니다.</span>
+        </p>
+
+        <div class="scoreFeed section-mt" id="praiseFeed">
+          <!-- JS render -->
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer section-mt-lg">
+      © 금촌교회 청년부 온라인 주보
+    </footer>
+  </main>
+
+  <!-- Fullscreen Viewer -->
+  <div class="viewer" id="viewer" aria-hidden="true">
+    <div class="viewer__backdrop" id="viewerCloseBg"></div>
+
+    <div class="viewer__panel" role="dialog" aria-modal="true" aria-label="악보 크게 보기">
+      <div class="viewer__top">
+        <div class="viewer__counter" id="viewerCounter">1 / 1</div>
+        <button class="viewer__close" id="viewerCloseBtn" type="button" aria-label="닫기">✕</button>
+      </div>
+
+      <div class="viewer__rail" id="viewerRail" aria-label="악보 슬라이드">
+        <!-- JS inject -->
+      </div>
+
+      <div class="viewer__hint">좌우로 넘기기 ↔</div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
