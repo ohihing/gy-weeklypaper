@@ -6,7 +6,7 @@
  * ✅ 매주 수정하는 곳 (여기만 바꾸면 됨)
  */
 const WEEK_DATA = {
-  weekBadge: "2026. 03. 08 (주일)",
+  weekBadge: "2026. 03. 15 (주일)",
 
   weekSubtitle: "환영합니다.\n금촌교회 청년부입니다.",
 
@@ -50,19 +50,19 @@ const WEEK_DATA = {
     {
       title: "성경봉독",
       leader: "다 같이",
-      lines: ["성경구절 입력"],
+      lines: ["히브리서 11:4"],
       verse: [
-        "1. 성경구절 입력",
+        "4. 믿음으로 아벨은 가인보다 더 나은 제사를 하나님께 드림으로 의로운 자라 하시는 증거를 얻었으니 하나님이 그 예물에 대하여 증언하심이라 그가 죽었으나 그 믿음으로써 지금도 말하느니라",
       ],
     },
     {
       title: "설교",
-      leader: "이재철 목사님",
-      lines: ["“제목”"],
+      leader: "심광일 목사님",
+      lines: ["“아벨의 예배”"],
     },
     {
       title: "축도",
-      leader: "이재철 목사님",
+      leader: "심광일 목사님",
       lines: [],
     },
 
@@ -98,10 +98,11 @@ const WEEK_DATA = {
 
   // ✅ 찬양 악보 이미지 (assets 폴더)
   praiseFiles: [
-    "assets/001.png",
+    "assets/001.jpg",
     "assets/002.png",
-    "assets/003.png",
-    "assets/004.png",
+    "assets/003.jpg",
+    "assets/004.jpg",
+    "assets/006.png",
   ],
 };
 
