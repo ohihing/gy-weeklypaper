@@ -52,7 +52,7 @@ const WEEK_DATA = {
       leader: "다 같이",
       lines: ["창세기 1:1"],
       verse: [
-        "1. 태초에 하나님이 천지를 창조하시니라 ",
+        "1. 태초에 하나님이 천지를 창조하시니라",
       ],
     },
     {
@@ -62,7 +62,7 @@ const WEEK_DATA = {
     },
     {
       title: "축도",
-      leader: "심광일 목사님",
+      leader: "이재철 목사님",
       lines: [],
     },
 
