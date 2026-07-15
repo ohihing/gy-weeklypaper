@@ -65,7 +65,7 @@ const WEEK_DATA = {
   praiseFiles: [
     "assets/001.jpg",
     "assets/002.jpg",
-    "assets/003.png",
+    "assets/003.jpg",
     "assets/004.jpg",
     "assets/005.jpg",
     "assets/006.jpg",
