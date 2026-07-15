@@ -8,7 +8,7 @@
 const WEEK_DATA = {
   weekBadge: "2026. 07. 16 ~ 18 (수련회)",
 
-  weekSubtitle: "금촌교회 라온청년부.\n하계수련회에 오신 것을 환영합니다.",
+  weekSubtitle: "금촌교회 라온청년부\n하계수련회에 오신 것을 환영합니다.",
 
   // ✅ 예배 순서
   orderItems: [
