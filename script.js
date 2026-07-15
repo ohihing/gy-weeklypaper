@@ -6,9 +6,9 @@
  * ✅ 매주 수정하는 곳 (여기만 바꾸면 됨)
  */
 const WEEK_DATA = {
-  weekBadge: "2026. 07. 12 (주일)",
+  weekBadge: "2026. 07. 16 ~ 18 (수련회)",
 
-  weekSubtitle: "환영합니다.\n금촌교회 라온청년부입니다.",
+  weekSubtitle: "금촌교회 라온청년부.\n하계수련회에 오신 것을 환영합니다.",
 
   // ✅ 예배 순서
   orderItems: [
@@ -44,54 +44,20 @@ const WEEK_DATA = {
       title: "찬양",
       leader: "인도자",
       lines: [
-        { type: "link", text: "이번 주 찬양 악보 보기", href: "#praise" },
+        { type: "link", text: "수련회 찬양 악보 보기", href: "#praise" },
       ],
     },
     {
       title: "성경봉독",
       leader: "다 같이",
-      lines: ["창세기 1:26~28"],
-      verse: [
-        "26. 하나님이 이르시되 우리의 형상을 따라 우리의 모양대로 우리가 사람을 만들고 그들로 바다의 물고기와 하늘의 새와 가축과 온 땅과 땅에 기는 모든 것을 다스리게 하자 하시고",
-        "27. 하나님이 자기 형상 곧 하나님의 형상대로 사람을 창조하시되 남자와 여자를 창조하시고",
-        "28. 하나님이 그들에게 복을 주시며 하나님이 그들에게 이르시되 생육하고 번성하여 땅에 충만하라, 땅을 정복하라, 바다의 물고기와 하늘의 새와 땅에 움직이는 모든 생물을 다스리라 하시니라",
-      ],
     },
     {
       title: "말씀",
-      leader: "이재철 목사님",
-      lines: ["“우리는 하나님의 형상”"],
+      leader: "심광일 목사님",
     },
     {
       title: "축도",
-      leader: "이재철 목사님",
-      lines: [],
-    },
-
-    // ✅ 용어 변경 + 클릭 시 청년부 소식으로 이동
-    {
-      title: "소식 및 공지",
-      leader: "배태욱 청년",
-      lines: [
-        { type: "link", text: "이번 주 청년부 소식 보기", href: "#news" },
-      ],
-    },
-
-    {
-      title: "목장모임",
-      leader: "목장별",
-      lines: [],
-    },
-  ],
-
-  // ✅ 소식 내용
-  newsIntro: "이번 주 청년부 소식입니다.",
-  newsItems: [
-    {
-      title: "text",
-      body:
-        "text\n" +
-        "text"
+      leader: "심광일 목사님",
     },
   ],
 
@@ -101,6 +67,13 @@ const WEEK_DATA = {
     "assets/002.jpg",
     "assets/003.png",
     "assets/004.jpg",
+    "assets/005.jpg",
+    "assets/006.jpg",
+    "assets/007.jpg",
+    "assets/008.jpg",
+    "assets/009.jpg",
+    "assets/010.jpg",
+    "assets/011.jpg",
   ],
 };
 
