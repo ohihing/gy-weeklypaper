@@ -6,9 +6,9 @@
  * ✅ 매주 수정하는 곳 (여기만 바꾸면 됨)
  */
 const WEEK_DATA = {
-  weekBadge: "2026. 07. 16 ~ 18 (수련회)",
+  weekBadge: "2026. 07. 19 (주일)",
 
-  weekSubtitle: "금촌교회 라온청년부\n하계수련회에 오신 것을 환영합니다.",
+  weekSubtitle: "환영합니다.\n금촌교회 라온청년부입니다.",
 
   // ✅ 예배 순서
   orderItems: [
@@ -44,20 +44,52 @@ const WEEK_DATA = {
       title: "찬양",
       leader: "인도자",
       lines: [
-        { type: "link", text: "수련회 찬양 악보 보기", href: "#praise" },
+        { type: "link", text: "이번 주 찬양 악보 보기", href: "#praise" },
       ],
     },
     {
       title: "성경봉독",
       leader: "다 같이",
+      lines: ["사도행전 6:7"],
+      verse: [
+        "7. 하나님의 말씀이 점점 왕성하여 예루살렘에 있는 제자의 수가 더 심히 많아지고 허다한 제사장의 무리도 이 도에 복종하니라.",
+      ],
     },
     {
       title: "말씀",
       leader: "심광일 목사님",
+      lines: ["“그리스도인의 결실 ”"],
     },
     {
       title: "축도",
       leader: "심광일 목사님",
+      lines: [],
+    },
+
+    // ✅ 용어 변경 + 클릭 시 청년부 소식으로 이동
+    {
+      title: "소식 및 공지",
+      leader: "배태욱 청년",
+      lines: [
+        { type: "link", text: "이번 주 청년부 소식 보기", href: "#news" },
+      ],
+    },
+
+    {
+      title: "목장모임",
+      leader: "목장별",
+      lines: [],
+    },
+  ],
+
+  // ✅ 소식 내용
+  newsIntro: "이번 주 청년부 소식입니다.",
+  newsItems: [
+    {
+      title: "text",
+      body:
+        "text\n" +
+        "text"
     },
   ],
 
@@ -68,12 +100,6 @@ const WEEK_DATA = {
     "assets/003.jpg",
     "assets/004.jpg",
     "assets/005.jpg",
-    "assets/006.jpg",
-    "assets/007.jpg",
-    "assets/008.jpg",
-    "assets/009.jpg",
-    "assets/010.jpg",
-    "assets/011.jpg",
   ],
 };
 
