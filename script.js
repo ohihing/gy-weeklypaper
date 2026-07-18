@@ -95,7 +95,7 @@ const WEEK_DATA = {
 
   // ✅ 찬양 악보 이미지 (assets 폴더)
   praiseFiles: [
-    "assets/001.jpg",
+    "assets/001.png",
     "assets/002.jpg",
     "assets/003.jpg",
     "assets/004.jpg",
