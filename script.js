@@ -6,7 +6,7 @@
  * ✅ 매주 수정하는 곳 (여기만 바꾸면 됨)
  */
 const WEEK_DATA = {
-  weekBadge: "2026. 07. 19 (주일)",
+  weekBadge: "2026. 07. 26 (주일)",
 
   weekSubtitle: "환영합니다.\n금촌교회 라온청년부입니다.",
 
@@ -58,7 +58,7 @@ const WEEK_DATA = {
     {
       title: "말씀",
       leader: "심광일 목사님",
-      lines: ["“그리스도인의 결실 ”"],
+      lines: ["“그리스도인의 결실”"],
     },
     {
       title: "축도",
@@ -95,11 +95,13 @@ const WEEK_DATA = {
 
   // ✅ 찬양 악보 이미지 (assets 폴더)
   praiseFiles: [
-    "assets/001.png",
+    "assets/001.jpg",
     "assets/002.jpg",
     "assets/003.jpg",
     "assets/004.jpg",
     "assets/005.jpg",
+    "assets/006.jpg",
+    "assets/007.jpg",
   ],
 };
 
