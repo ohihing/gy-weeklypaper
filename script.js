@@ -109,6 +109,7 @@ const WEEK_DATA = {
     "assets/002.jpg",
     "assets/003.png",
     "assets/004.png",
+    "assets/005.png",
   ],
 };
 
