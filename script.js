@@ -6,7 +6,7 @@
  * ✅ 매주 수정하는 곳 (여기만 바꾸면 됨)
  */
 const WEEK_DATA = {
-  weekBadge: "2026. 07. 26 (주일)",
+  weekBadge: "2026. 08. 09 (주일)",
 
   weekSubtitle: "환영합니다.\n금촌교회 라온청년부입니다.",
 
@@ -50,15 +50,15 @@ const WEEK_DATA = {
     {
       title: "성경봉독",
       leader: "다 같이",
-      lines: ["사도행전 6:7"],
+      lines: ["성경 0:0 ~ 0:0"],
       verse: [
-        "7. 하나님의 말씀이 점점 왕성하여 예루살렘에 있는 제자의 수가 더 심히 많아지고 허다한 제사장의 무리도 이 도에 복종하니라.",
+        "1. 구절.",
       ],
     },
     {
       title: "말씀",
       leader: "심광일 목사님",
-      lines: ["“그리스도인의 결실”"],
+      lines: ["“제목”"],
     },
     {
       title: "축도",
@@ -97,11 +97,8 @@ const WEEK_DATA = {
   praiseFiles: [
     "assets/001.jpg",
     "assets/002.jpg",
-    "assets/003.jpg",
-    "assets/004.jpg",
-    "assets/005.jpg",
-    "assets/006.jpg",
-    "assets/007.jpg",
+    "assets/003.png",
+    "assets/004.png",
   ],
 };
 
