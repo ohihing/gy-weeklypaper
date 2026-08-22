@@ -6,7 +6,7 @@
  * ✅ 매주 수정하는 곳 (여기만 바꾸면 됨)
  */
 const WEEK_DATA = {
-  weekBadge: "2026. 08. 16 (주일)",
+  weekBadge: "2026. 08. 23 (주일)",
 
   weekSubtitle: "환영합니다.\n금촌교회 청년부입니다.",
 
@@ -106,6 +106,7 @@ const WEEK_DATA = {
     "assets/004.jpg",
     "assets/005.jpg",
     "assets/006.jpg",
+    "assets/007.jpg",
   ],
 };
 
