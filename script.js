@@ -63,7 +63,7 @@ const WEEK_DATA = {
     {
       title: "말씀",
       leader: "심광일 목사님",
-      lines: ["“제목”"],
+      lines: ["“그리스도인이 되어 가다”"],
     },
     {
       title: "축도",
